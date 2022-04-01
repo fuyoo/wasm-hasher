@@ -86,7 +86,7 @@ document.querySelector("#file")
             reset()
             let file = (this.files[0])
             fileinfo.innerHTML = `文件名：${file.name} 共：${getSize(file.size)}`
-            import ("../pkg")
+            import ("@fuyoo/wasm-hasher")
                 .then(pkg => {
                     console.log(pkg)
                     let start = Date.now()
