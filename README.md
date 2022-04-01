@@ -1,11 +1,28 @@
 # wasm-md5
 
-> computed file's md5 by webAssembly
+> computed data's hash by webAssembly
+> 
+> support md5,sha1,sha2-224,sha2-356,sha2-384,sha2-512,sha3-224,sha3-256,sha3-384,sha3-512,china-sm3
+
+| type | function | params                  | return  |
+|------|----------|-------------------------|---------|
+| md5  | md5      | md5(blob,callback)      | promise |
+| sha1 | sha1     | sha1(blob,callback)     | promise |
+| sha2 | sha2_224 | sha2_224(blob,callback) | promise |
+| -    | sha2_256 | sha2_256(blob,callback) | promise |
+| -    | sha2_384 | sha2_384(blob,callback) | promise |
+| -    | sha2_512 | sha2_512(blob,callback) | promise |
+| sha3 | sha3_224 | sha3_224(blob,callback) | promise |
+| -    | sha3_256 | sha3_256(blob,callback) | promise |
+| -    | sha3_384 | sha3_384(blob,callback) | promise |
+| -    | sha3_512 | sha3_512(blob,callback) | promise |
+| sm3  | sm3      | sm3(blob,callback)      | promise |
+
 
 ## How to install
 
 ```sh
-npm install @fuyoo/wasm-md5
+npm install @fuyoo/wasm-hasher
 ```
 
 ## How to use
