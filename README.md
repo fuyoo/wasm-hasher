@@ -1,4 +1,4 @@
-# wasm-md5
+# wasm-hasher
 
 > computed data's hash by webAssembly
 > 
