@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MD5 ONLINE</title>
+</head>
+
+<body>
+计算方式：<select id="type">
+    <optgroup label="md5">
+        <option value="md5">md5</option>
+    </optgroup>
+    <optgroup label="sha1">
+        <option value="sha1">sha1</option>
+    </optgroup>
+    <optgroup label="sha2">
+        <option value="sha2_224">sha2-224</option>
+        <option value="sha2_256">sha2-256</option>
+        <option value="sha2_384">sha2-384</option>
+        <option value="sha2_512">sha2-512</option>
+    </optgroup>
+    <optgroup label="sha3">
+        <option value="sha3_224">sha3-224</option>
+        <option value="sha3_256">sha3-256</option>
+        <option value="sha3_384">sha3-384</option>
+        <option value="sha3_512">sha3-512</option>
+        <option value="sha3_512">sha3-512</option>
+    </optgroup>
+    <optgroup label="国密">
+        <option value="sm3">sm3</option>
+    </optgroup>
+</select>
+
+<button id="file">选择文件</button>
+<div id="fileinfo"></div>
+<div id="progress"></div>
+<div id="time"></div>
+</body>
+<script src="index.js"></script>
+</html>
