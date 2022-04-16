@@ -358,7 +358,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "wasm-md5"
+name = "wasm-hasher"
 version = "0.1.0"
 dependencies = [
  "console_error_panic_hook",

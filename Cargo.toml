@@ -1,7 +1,7 @@
 # You must change these to your own details.
 [package]
-name = "wasm-md5"
-description = "computed file md5 by WebAssembly"
+name = "wasm-hasher"
+description = "computed file hash by WebAssembly"
 version = "0.1.0"
 authors = ["fuyoo <fuyoo0928@gmail.com>"]
 categories = ["wasm"]
