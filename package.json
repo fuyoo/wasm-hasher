@@ -1,9 +1,20 @@
 {
     "author": "fuyoo <fuyoo0928@gmail.com>",
     "name": "@fuyoo/wasm-hasher",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "computed data hash by webAssembly support md5,sha1,sha2,sha3,sm3",
-    "keywords": ["md5","sha","sha1","sha2","sha3","sha256","sha384","sha512","wasm","webassembly"],
+    "keywords": [
+        "md5",
+        "sha",
+        "sha1",
+        "sha2",
+        "sha3",
+        "sha256",
+        "sha384",
+        "sha512",
+        "wasm",
+        "webassembly"
+    ],
     "main": "pkg/index.js",
     "scripts": {
         "build": "rimraf dist pkg && webpack",
@@ -18,10 +29,13 @@
     "devDependencies": {
         "@wasm-tool/wasm-pack-plugin": "^1.1.0",
         "copy-webpack-plugin": "^5.0.3",
+        "rimraf": "^3.0.0",
         "webpack": "^4.42.0",
         "webpack-cli": "^3.3.3",
-        "webpack-dev-server": "^3.7.1",
-        "rimraf": "^3.0.0"
+        "webpack-dev-server": "^3.7.1"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@fuyoo/wasm-hasher": "0.1.6"
+    }
 }
