@@ -1,10 +1,10 @@
 {
-  "name": "wasm-hasher",
+  "name": "@fuyoo/wasm-hasher",
   "collaborators": [
     "fuyoo <fuyoo0928@gmail.com>"
   ],
   "description": "computed file hash by WebAssembly",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "files": [
     "wasm_hasher_bg.wasm",
     "wasm_hasher.js",
