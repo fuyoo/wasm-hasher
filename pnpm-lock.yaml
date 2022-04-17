@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@fuyoo/wasm-hasher': 0.1.6
+  '@fuyoo/wasm-hasher': 0.1.7
   '@wasm-tool/wasm-pack-plugin': ^1.1.0
   copy-webpack-plugin: ^5.0.3
   rimraf: ^3.0.0
@@ -10,7 +10,7 @@ specifiers:
   webpack-dev-server: ^3.7.1
 
 dependencies:
-  '@fuyoo/wasm-hasher': 0.1.6
+  '@fuyoo/wasm-hasher': 0.1.7
 
 devDependencies:
   '@wasm-tool/wasm-pack-plugin': 1.6.0
@@ -24,6 +24,12 @@ packages:
 
   /@fuyoo/wasm-hasher/0.1.6:
     resolution: {integrity: sha512-b40+DfxliUmtBzF5s4a4yA1ZAL1Rmmgauu/GHSyU6QRI3Wgg86Bmk1FlsS6syYZlccjXfEKOUz5/yrMF4fX/Aw==}
+    dev: false
+
+  /@fuyoo/wasm-hasher/0.1.7:
+    resolution: {integrity: sha512-UTXuVcFpTFk6fAWG4UKXXFQLFU5hxVVtWZo7ER/8xdcylvI/KVMG0csXPdwmVsCG2GPKJOjrICcJNMNqyZLdQQ==}
+    dependencies:
+      '@fuyoo/wasm-hasher': 0.1.6
     dev: false
 
   /@types/glob/7.2.0:
