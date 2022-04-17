@@ -4,7 +4,7 @@
     "fuyoo <fuyoo0928@gmail.com>"
   ],
   "description": "computed file hash by WebAssembly",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "files": [
     "wasm_hasher_bg.wasm",
     "wasm_hasher.js",
