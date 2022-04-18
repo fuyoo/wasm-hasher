@@ -1,41 +1,41 @@
 {
-    "author": "fuyoo <fuyoo0928@gmail.com>",
-    "name": "@fuyoo/wasm-hasher",
-    "version": "0.1.10",
-    "description": "computed data hash by webAssembly support md5,sha1,sha2,sha3,sm3",
-    "keywords": [
-        "md5",
-        "sha",
-        "sha1",
-        "sha2",
-        "sha3",
-        "sha256",
-        "sha384",
-        "sha512",
-        "wasm",
-        "webassembly"
-    ],
-    "main": "pkg/wasm_hasher.js",
-    "scripts": {
-        "build": "rimraf dist pkg && webpack",
-        "pack": "wasm-pack build . --target web",
-        "start": "rimraf dist pkg && webpack-dev-server --open -d",
-        "test": "cargo test && wasm-pack test --headless"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/fuyoo/wasm-hasher.git"
-    },
-    "devDependencies": {
-        "@wasm-tool/wasm-pack-plugin": "^1.1.0",
-        "copy-webpack-plugin": "^10.2.4",
-        "rimraf": "^3.0.0",
-        "webpack": "^4.42.0",
-        "webpack-cli": "^3.3.3",
-        "webpack-dev-server": "^4.8.1"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "@fuyoo/wasm-hasher": "^0.1.7"
-    }
+  "author": "fuyoo <fuyoo0928@gmail.com>",
+  "name": "@fuyoo/wasm-hasher",
+  "version": "0.1.12",
+  "description": "computed data hash by webAssembly support md5,sha1,sha2,sha3,sm3",
+  "keywords": [
+    "md5",
+    "sha",
+    "sha1",
+    "sha2",
+    "sha3",
+    "sha256",
+    "sha384",
+    "sha512",
+    "wasm",
+    "webassembly"
+  ],
+  "licenses": [
+    "MIT"
+  ],
+  "main": "pkg/wasm_hasher.js",
+  "scripts": {
+    "build": "rimraf dist pkg && webpack",
+    "release": "wasm-pack build  . --target web --release",
+    "start": "rimraf dist pkg && webpack-dev-server --open -d",
+    "test": "cargo test && wasm-pack test --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuyoo/wasm-hasher.git"
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.1.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.3",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "license": "MIT"
 }
