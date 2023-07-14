@@ -126,7 +126,16 @@ document.querySelector("#file")
     })
 
 ```
+**vite Demo**
+```ts
+import * as hasher from "@/fuyoo/wasm-hasher" 
 
+async funcion calcHash() {
+    await hasher.default()
+    const hash = await hasher.md5(file:File,(progress:number) => console.log(progress))
+    console.log(hash)
+}
+```
 ## license
 
 [MIT LICENSE](./LICENSE)
