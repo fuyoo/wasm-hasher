@@ -130,11 +130,13 @@ document.querySelector("#file")
 ```ts
 import * as hasher from "@/fuyoo/wasm-hasher" 
 
-async funcion calcHash() {
+async function calcHash() {
     await hasher.default()
     const hash = await hasher.md5(file:File,(progress:number) => console.log(progress))
     console.log(hash)
 }
+
+;(async () => await calcHash())()
 ```
 ## license
 
