@@ -19,6 +19,9 @@
     "MIT"
   ],
   "main": "pkg/wasm_hasher.js",
+  "files": [
+    "pkg"
+  ],
   "scripts": {
     "build": "rimraf dist pkg && webpack",
     "release": "wasm-pack build  . --target web --release",

@@ -5,6 +5,7 @@ src
 static
 target
 tests
+demo
 Cargo.lock
 Cargo.toml
 package-lock.json
