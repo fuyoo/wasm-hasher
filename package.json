@@ -23,8 +23,8 @@
     "pkg/wasm_hasher.js",
     "pkg/wasm_hasher.d.ts"
   ],
-  "module": "wasm_hasher.js",
-  "types": "wasm_hasher.d.ts",
+  "module": "pkg/wasm_hasher.js",
+  "types": "pkg/wasm_hasher.d.ts",
   "scripts": {
     "build": "rimraf dist pkg && webpack",
     "release": "wasm-pack build  . --target web --release",
