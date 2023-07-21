@@ -8,6 +8,7 @@ tests
 demo
 Cargo.lock
 Cargo.toml
+.DS_Store
 package-lock.json
 webpack.config.js
 .idea

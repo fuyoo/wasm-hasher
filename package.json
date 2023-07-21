@@ -18,10 +18,13 @@
   "licenses": [
     "MIT"
   ],
-  "main": "pkg/wasm_hasher.js",
   "files": [
-    "pkg/**/*"
+    "pkg/wasm_hasher_bg.wasm",
+    "pkg/wasm_hasher.js",
+    "pkg/wasm_hasher.d.ts"
   ],
+  "module": "wasm_hasher.js",
+  "types": "wasm_hasher.d.ts",
   "scripts": {
     "build": "rimraf dist pkg && webpack",
     "release": "wasm-pack build  . --target web --release",
