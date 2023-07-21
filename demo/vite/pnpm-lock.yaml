@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@fuyoo/wasm-hasher':
-    specifier: 0.1.16
-    version: registry.npmjs.org/@fuyoo/wasm-hasher@0.1.16
+    specifier: 0.1.17
+    version: registry.npmjs.org/@fuyoo/wasm-hasher@0.1.17
   vue:
     specifier: ^3.3.4
     version: registry.npmjs.org/vue@3.3.4
@@ -297,10 +297,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmjs.org/@fuyoo/wasm-hasher@0.1.16:
-    resolution: {integrity: sha512-Vekb89Of198Nj2i9jmd8jIGmcvXZGwmXKAHnas4BwG92OX0ml+Y7F2WvqUUtUTD1JK2wNXGae+x1puV30giPpw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@fuyoo/wasm-hasher/-/wasm-hasher-0.1.16.tgz}
+  registry.npmjs.org/@fuyoo/wasm-hasher@0.1.17:
+    resolution: {integrity: sha512-atvqcVhsP27T+Zm0MdLQ09/lCmedhl0TTkrpScKibXKeAnEHLEz3E+fP3KbLFYXfc8iRBRjKqiJBdYn/zHxZsg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@fuyoo/wasm-hasher/-/wasm-hasher-0.1.17.tgz}
     name: '@fuyoo/wasm-hasher'
-    version: 0.1.16
+    version: 0.1.17
     dev: false
 
   registry.npmjs.org/@jridgewell/sourcemap-codec@1.4.15:
