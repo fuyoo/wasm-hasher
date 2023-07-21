@@ -20,7 +20,7 @@
   ],
   "main": "pkg/wasm_hasher.js",
   "files": [
-    "pkg"
+    "pkg/**/*"
   ],
   "scripts": {
     "build": "rimraf dist pkg && webpack",
