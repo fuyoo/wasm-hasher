@@ -7,7 +7,8 @@ authors = ["fuyoo <fuyoo0928@gmail.com>"]
 categories = ["wasm"]
 readme = "README.md"
 edition = "2018"
-
+repository = "https://github.com/fuyoo/wasm-hasher.git"
+license = "MIT"
 [lib]
 crate-type = ["cdylib"]
 
