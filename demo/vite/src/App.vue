@@ -34,6 +34,7 @@
     <div id="hash">
       <div>{{ lng.jd }}：<input type="range" :value="ps"> {{ps}}%</div>
       <div>{{t}}{{lng.val}}：{{h}}</div>
+      <div>{{lng.time}}: {{used}} ms</div>
     </div>
   </div>
 
@@ -50,7 +51,8 @@ const lang =  {
     gm: "国密",
     cf:"选择文件",
     jd: "进度",
-    val: "值"
+    val: "值",
+    time: "耗时"
   },
   en: {
     lng: "language",
@@ -58,7 +60,8 @@ const lang =  {
     gm: "Chinese SM3",
     cf:"Choose File",
     jd: "Progress",
-    val: "value"
+    val: "value",
+    time: "used"
   }
 }
 const lng = ref<Record<string, string>>({})
@@ -82,7 +85,7 @@ const setLngFn = (evt:any) => {
 let t = ref("md5")
 let ps = ref(0)
 let h = ref("")
-
+let used = ref(0)
 const setValue = (evt: any) => {
   t.value = evt.target.value
 }
@@ -93,6 +96,7 @@ const chooseFileFn = () => {
     const file = ev.target.files[0]
     hash.default().then(() => {
       ps.value = 0
+      const start = Date.now()
       //@ts-ignore
       hash[t.value](file, (p: number) => {
         ps.value = p
@@ -100,6 +104,7 @@ const chooseFileFn = () => {
           .then((res: string) => {
             ps.value = 100
             h.value = res
+            used.value = Date.now() - start
           })
     })
   }
